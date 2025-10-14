@@ -45,25 +45,25 @@ const Landing = () => {
     {
       icon: DollarSign,
       value: "₹250+ Cr",
-      label: "Funds Distributed",
+      label: "Funds Allocated",
       color: "primary",
     },
     {
       icon: FolderKanban,
       value: "500+",
-      label: "Active Projects",
+      label: "Development Projects",
       color: "secondary",
     },
     {
       icon: GraduationCap,
       value: "10,000+",
-      label: "Skill Trainings Completed",
+      label: "Skill Training Beneficiaries",
       color: "accent",
     },
     {
       icon: Users,
-      value: "10 Lakh+",
-      label: "Beneficiaries Empowered",
+      value: "5 Lakh+",
+      label: "SC Families Benefited",
       color: "primary",
     },
   ];
@@ -71,31 +71,31 @@ const Landing = () => {
   const keyFeatures = [
     {
       icon: UserPlus,
-      title: "Beneficiary Support",
-      description: "Comprehensive assistance for marginalized communities including SC/ST, OBC, and economically weaker sections",
+      title: "Educational Support",
+      description: "Scholarships, coaching programs, and quality education initiatives for SC students from primary to higher education levels",
     },
     {
       icon: DollarSign,
       title: "Direct Benefit Transfer",
-      description: "Transparent fund disbursement directly to beneficiary accounts through DBT mechanism",
+      description: "Transparent fund disbursement directly to beneficiary accounts through DBT mechanism for financial assistance",
     },
     {
       icon: Building,
       title: "Infrastructure Development",
-      description: "Building healthcare facilities, community centers, and essential amenities in underserved areas",
+      description: "Building community centers, sanitation facilities, roads, and essential amenities in SC-dominated villages and habitations",
     },
     {
       icon: Briefcase,
       title: "Livelihood Enhancement",
-      description: "Skill development programs, entrepreneurship training, and sustainable employment opportunities",
+      description: "Skill development programs, vocational training, entrepreneurship support, and sustainable employment opportunities",
     },
   ];
 
   const schemeGoals = [
-    "Empower marginalized communities through inclusive healthcare access",
-    "Bridge economic disparities with targeted financial assistance",
-    "Enhance skill development and employment opportunities",
-    "Ensure transparent and accountable fund utilization",
+    "Reduce poverty among Scheduled Caste communities through targeted interventions",
+    "Enhance educational opportunities and promote quality learning for SC students",
+    "Develop infrastructure in SC-dominated areas for improved living standards",
+    "Provide skill training and livelihood support for sustainable economic growth",
   ];
 
   return (
@@ -158,7 +158,7 @@ const Landing = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-lg md:text-xl text-primary-foreground/80 mb-12 max-w-3xl mx-auto"
           >
-            Pradhan Mantri Ayushman Yojana - A transformative initiative for inclusive healthcare and holistic development
+            Pradhan Mantri Anusuchit Jaati Abhyuday Yojana - Holistic development initiative for Scheduled Caste communities
           </motion.p>
 
           {/* CTA Buttons */}
@@ -218,7 +218,7 @@ const Landing = () => {
               <h2 className="text-4xl md:text-5xl font-bold">Scheme Overview</h2>
             </motion.div>
             <motion.p variants={itemVariants} className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A comprehensive initiative dedicated to uplifting marginalized communities through healthcare access, skill development, and sustainable livelihood opportunities
+              A comprehensive initiative dedicated to uplifting Scheduled Caste communities through poverty reduction, education enhancement, infrastructure development, and sustainable livelihood opportunities
             </motion.p>
           </motion.div>
 
@@ -240,7 +240,7 @@ const Landing = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    To create an equitable society by ensuring quality healthcare, economic empowerment, and social inclusion for all marginalized communities across India through transparent governance and community participation.
+                    To create an equitable society by ensuring comprehensive development of Scheduled Caste communities through quality education, economic empowerment, infrastructure improvement, and social inclusion across India through transparent governance and community participation.
                   </p>
                 </CardContent>
               </Card>
@@ -259,15 +259,15 @@ const Landing = () => {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>Scheduled Castes (SC) & Scheduled Tribes (ST)</span>
+                      <span>Scheduled Caste (SC) Families Below Poverty Line</span>
                     </li>
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>Other Backward Classes (OBC)</span>
+                      <span>SC Students & Youth seeking skill development</span>
                     </li>
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>Economically Weaker Sections (EWS)</span>
+                      <span>SC Communities in underserved areas</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -430,7 +430,7 @@ const Landing = () => {
             variants={itemVariants}
             className="text-xl text-primary-foreground/90 mb-10"
           >
-            Join thousands of beneficiaries who have transformed their lives through PM-AJAY
+            Join thousands of Scheduled Caste families who have transformed their lives through PM-AJAY
           </motion.p>
           <motion.div
             variants={itemVariants}
@@ -471,7 +471,7 @@ const Landing = () => {
                 <h3 className="font-bold text-xl">PM-AJAY</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Empowering marginalized communities through inclusive healthcare and holistic development.
+                Holistic development of Scheduled Caste communities through education, infrastructure, and livelihood support.
               </p>
             </div>
 
@@ -506,32 +506,12 @@ const Landing = () => {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="https://www.mohfw.gov.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Ministry of Health & Family Welfare
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://socialjustice.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Ministry of Social Justice
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tribal.nic.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Ministry of Tribal Affairs
+                    Ministry of Social Justice & Empowerment
                   </a>
                 </li>
                 <li>
@@ -542,6 +522,26 @@ const Landing = () => {
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     National Portal of India
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.digitalindia.gov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    Digital India
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.mygov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    MyGov India
                   </a>
                 </li>
               </ul>
