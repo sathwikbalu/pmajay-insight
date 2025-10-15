@@ -158,7 +158,25 @@
       "newApplication": "नया आवेदन",
       "trackApplication": "आवेदन ट्रैक करें",
       "viewBenefits": "लाभ देखें",
-      "raiseGrievance": "शिकायत दर्ज करें"
+      "raiseGrievance": "शिकायत दर्ज करें",
+      "activeApplications": "सक्रिय आवेदन",
+      "completedTraining": "पूर्ण प्रशिक्षण",
+      "pendingActions": "लंबित कार्रवाई",
+      "recentActivities": "हाल की गतिविधियाँ",
+      "activitiesDescription": "प्रणाली के साथ आपकी नवीनतम अंतःक्रियाएँ",
+      "quickActionsDescription": "सामान्यतः उपयोग की जाने वाली सुविधाएँ",
+      "enrollTraining": "प्रशिक्षण में नामांकन करें",
+      "activities": {
+        "applicationSubmitted": "आवेदन प्रस्तुत किया गया",
+        "documentVerification": "दस्तावेज सत्यापन",
+        "skillTrainingEnrolled": "कौशल प्रशिक्षण नामांकित",
+        "twoHoursAgo": "2 घंटे पहले",
+        "oneDayAgo": "1 दिन पहले",
+        "threeDaysAgo": "3 दिन पहले",
+        "pending": "लंबित",
+        "completed": "पूर्ण",
+        "inProgress": "प्रगति पर है"
+      }
     },
     "officer": {
       "welcome": "स्वागत है, अधिकारी",

@@ -158,7 +158,25 @@
       "newApplication": "కొత్త దరఖాస్తు",
       "trackApplication": "దరఖాస్తును ట్రాక్ చేయండి",
       "viewBenefits": "ప్రయోజనాలను వీక్షించండి",
-      "raiseGrievance": "ఫిర్యాదు లేవనెత్తండి"
+      "raiseGrievance": "ఫిర్యాదు లేవనెత్తండి",
+      "activeApplications": "క్రియాశీల దరఖాస్తులు",
+      "completedTraining": "పూర్తయిన శిక్షణ",
+      "pendingActions": "పెండింగ్ చర్యలు",
+      "recentActivities": "ఇటీవలి కార్యాచరణలు",
+      "activitiesDescription": "సిస్టమ్ తో మీ తాజా సంక్రమణలు",
+      "quickActionsDescription": "సాధారణంగా ఉపయోగించే లక్షణాలు",
+      "enrollTraining": "శిక్షణలో నమోదు చేయండి",
+      "activities": {
+        "applicationSubmitted": "దరఖాస్తు సమర్పించబడింది",
+        "documentVerification": "పత్రాల ధృవీకరణ",
+        "skillTrainingEnrolled": "నైపుణ్య శిక్షణ నమోదు చేయబడింది",
+        "twoHoursAgo": "2 గంటల క్రితం",
+        "oneDayAgo": "1 రోజు క్రితం",
+        "threeDaysAgo": "3 రోజుల క్రితం",
+        "pending": "పెండింగ్లో ఉంది",
+        "completed": "పూర్తయింది",
+        "inProgress": "పురోగతిలో ఉంది"
+      }
     },
     "officer": {
       "welcome": "స్వాగతం, అధికారి",
