@@ -27,6 +27,11 @@
     "missionDesc": "शिक्षा, बुनियादी ढांचे, कौशल विकास और आजीविका संवर्धन में लक्षित हस्तक्षेप के माध्यम से अनुसूचित जाति समुदायों का व्यापक विकास और उत्थान सुनिश्चित करना।",
     "beneficiaries": "लाभार्थी",
     "beneficiariesDesc": "भारत भर में अनुसूचित जाति समुदाय के सदस्य जो शिक्षा, कौशल विकास, आजीविका और बुनियादी ढांचे के विकास के लिए सहायता मांग रहे हैं।",
+    "beneficiaries": {
+      "item1": "गरीबी रेखा से नीचे के अनुसूचित जाति (एससी) परिवार",
+      "item2": "कौशल विकास चाहने वाले एससी छात्र और युवा",
+      "item3": "अछूत क्षेत्रों में एससी समुदाय"
+    },
     "keyGoals": "प्रमुख लक्ष्य",
     "goal1": "आय सृजन के माध्यम से गरीबी में कमी",
     "goal2": "शैक्षिक उन्नति और छात्रवृत्ति",
@@ -38,6 +43,7 @@
     "skillTrainingsCompleted": "पूर्ण कौशल प्रशिक्षण",
     "beneficiariesEmpowered": "सशक्त लाभार्थी",
     "keyFeatures": "मुख्य विशेषताएं",
+    "featuresDesc": "समग्र सामुदायिक विकास के लिए डिज़ाइन किए गए व्यापक समर्थन तंत्र",
     "beneficiarySupportTitle": "लाभार्थी सहायता",
     "beneficiarySupportDesc": "शिक्षा, आवास और आजीविका कार्यक्रमों के लिए अनुसूचित जाति समुदाय के सदस्यों को प्रत्यक्ष सहायता",
     "directBenefitTitle": "प्रत्यक्ष लाभ हस्तांतरण",
@@ -48,12 +54,67 @@
     "livelihoodDesc": "स्थायी आय सृजन के लिए कौशल प्रशिक्षण कार्यक्रम और रोजगार के अवसर",
     "readyToStart": "शुरू करने के लिए तैयार हैं?",
     "joinDesc": "हजारों लाभार्थियों के साथ जुड़ें जो पहले से ही पीएम-अजय योजना से लाभान्वित हो रहे हैं",
+    "footerDesc": "शिक्षा, बुनियादी ढांचा और आजीविका समर्थन के माध्यम से अनुसूचित जाति समुदायों का समग्र विकास।",
     "footerQuickLinks": "त्वरित लिंक",
     "footerMinistries": "सरकारी मंत्रालय",
     "ministryTribal": "जनजातीय मामलों का मंत्रालय",
     "ministrySocialJustice": "सामाजिक न्याय और अधिकारिता मंत्रालय",
     "nationalPortal": "भारत का राष्ट्रीय पोर्टल",
-    "allRights": "सर्वाधिकार सुरक्षित"
+    "digitalIndia": "डिजिटल इंडिया",
+    "myGovIndia": "मायगव इंडिया",
+    "allRights": "सर्वाधिकार सुरक्षित",
+    "privacyPolicy": "गोपनीयता नीति",
+    "termsOfService": "सेवा की शर्तें",
+    "contactUs": "संपर्क करें"
+  },
+  "landing2": {
+    "tagline": "अछूत समुदायों को सशक्त बनाना",
+    "subtitle": "प्रधानमंत्री अनुसूचित जाति अभ्युदय योजना - अनुसूचित जाति समुदायों के लिए समग्र विकास पहल",
+    "applyNow": "अभी आवेदन करें",
+    "checkEligibility": "पात्रता जांचें",
+    "schemeOverview": "योजना का अवलोकन",
+    "ourMission": "हमारा मिशन",
+    "missionDesc": "गरीबी में कमी, शिक्षा संवर्धन, बुनियादी ढांचा विकास और स्थायी आजीविका अवसरों के माध्यम से अनुसूचित जाति समुदायों को उठाने के लिए समर्पित एक व्यापक पहल",
+    "missionDesc2": "पारदर्शी शासन और सामुदायिक भागीदारी के माध्यम से भारत भर में गुणवत्तापूर्ण शिक्षा, आर्थिक सशक्तिकरण, बुनियादी ढांचा सुधार और सामाजिक समावेशन के माध्यम से अनुसूचित जाति समुदायों का व्यापक विकास सुनिश्चित करके एक समान समाज बनाना।",
+    "beneficiaries": "लाभार्थी",
+    "beneficiaries": {
+      "item1": "गरीबी रेखा से नीचे के अनुसूचित जाति (एससी) परिवार",
+      "item2": "कौशल विकास चाहने वाले एससी छात्र और युवा",
+      "item3": "अछूत क्षेत्रों में एससी समुदाय"
+    },
+    "goal1": "लक्षित हस्तक्षेप के माध्यम से अनुसूचित जाति समुदायों में गरीबी में कमी",
+    "goal2": "एससी छात्रों के लिए शैक्षिक अवसरों को बढ़ाना और गुणवत्तापूर्ण शिक्षा को बढ़ावा देना",
+    "goal3": "सुधारित जीवन शैली के लिए एससी-प्रधान क्षेत्रों में बुनियादी ढांचे का विकास",
+    "goal4": "स्थायी आर्थिक विकास के लिए कौशल प्रशिक्षण और आजीविका समर्थन प्रदान करना",
+    "impactStats": "प्रभाव और उपलब्धियाँ",
+    "fundsAllocated": "आवंटित धनराशि",
+    "developmentProjects": "विकास परियोजनाएं",
+    "skillTrainingBeneficiaries": "कौशल प्रशिक्षण लाभार्थी",
+    "scFamiliesBenefited": "एससी परिवार लाभान्वित",
+    "keyFeatures": "मुख्य विशेषताएं",
+    "featuresDesc": "समग्र सामुदायिक विकास के लिए डिज़ाइन किए गए व्यापक समर्थन तंत्र",
+    "educationalSupportTitle": "शैक्षिक समर्थन",
+    "educationalSupportDesc": "प्राथमिक से उच्च शिक्षा स्तर तक एससी छात्रों के लिए छात्रवृत्ति, कोचिंग कार्यक्रम और गुणवत्तापूर्ण शिक्षा पहल",
+    "directBenefitTitle": "प्रत्यक्ष लाभ हस्तांतरण",
+    "directBenefitDesc": "वित्तीय सहायता के लिए डीबीटी तंत्र के माध्यम से लाभार्थी खातों में सीधे पारदर्शी धन वितरण",
+    "infrastructureTitle": "बुनियादी ढांचा विकास",
+    "infrastructureDesc": "एससी-प्रधान गांवों और बस्तियों में सामुदायिक केंद्र, स्वच्छता सुविधाएं, सड़कें और आवश्यक सुविधाएं बनाना",
+    "livelihoodTitle": "आजीविका संवर्धन",
+    "livelihoodDesc": "कौशल विकास कार्यक्रम, व्यावसायिक प्रशिक्षण, उद्यमिता समर्थन और स्थायी रोजगार अवसर",
+    "readyToStart": "शुरू करने के लिए तैयार हैं?",
+    "joinDesc": "देश भर में जीवन बदलना",
+    "joinDesc2": "हजारों अनुसूचित जाति परिवारों के साथ जुड़ें जिन्होंने पीएम-अजय के माध्यम से अपने जीवन बदले हैं",
+    "footerDesc": "शिक्षा, बुनियादी ढांचा और आजीविका समर्थन के माध्यम से अनुसूचित जाति समुदायों का समग्र विकास।",
+    "footerQuickLinks": "त्वरित लिंक",
+    "footerMinistries": "मंत्रालय लिंक",
+    "ministrySocialJustice": "सामाजिक न्याय और अधिकारिता मंत्रालय",
+    "nationalPortal": "भारत का राष्ट्रीय पोर्टल",
+    "digitalIndia": "डिजिटल इंडिया",
+    "myGovIndia": "मायगव इंडिया",
+    "allRights": "सर्वाधिकार सुरक्षित",
+    "privacyPolicy": "गोपनीयता नीति",
+    "termsOfService": "सेवा की शर्तें",
+    "contactUs": "संपर्क करें"
   },
   "login": {
     "welcomeBack": "वापसी पर स्वागत है",
@@ -98,6 +159,42 @@
       "trackApplication": "आवेदन ट्रैक करें",
       "viewBenefits": "लाभ देखें",
       "raiseGrievance": "शिकायत दर्ज करें"
+    },
+    "officer": {
+      "welcome": "स्वागत है, अधिकारी",
+      "overview": "लाभार्थी आवेदनों की निगरानी और प्रबंधन करें",
+      "totalApplications": "कुल आवेदन",
+      "trendApplications": "पिछले महीने से +12%",
+      "approved": "स्वीकृत",
+      "approvalRate": "71.6% स्वीकृति दर",
+      "pendingReview": "समीक्षा लंबित",
+      "rejected": "अस्वीकृत",
+      "pendingApplications": "लंबित आवेदन",
+      "pendingDescription": "आपकी समीक्षा की प्रतीक्षा कर रहे आवेदन",
+      "applicationId": "आवेदन #{{id}}",
+      "submittedDaysAgo": "{{days}} दिन पहले सबमिट किया गया",
+      "review": "समीक्षा करें"
+    },
+    "admin": {
+      "welcome": "प्रशासक डैशबोर्ड",
+      "overview": "पूर्ण प्रणाली अवलोकन और विश्लेषण",
+      "totalBeneficiaries": "कुल लाभार्थी",
+      "beneficiaryGrowth": "+15% वृद्धि",
+      "totalFundsDisbursed": "कुल वितरित धनराशि",
+      "fundUtilization": "85% उपयोग",
+      "activeProjects": "सक्रिय परियोजनाएं",
+      "systemGrowth": "प्रणाली वृद्धि",
+      "regionalDistribution": "क्षेत्रीय वितरण",
+      "beneficiaryRegions": "क्षेत्रों में लाभार्थी",
+      "north": "उत्तर",
+      "south": "दक्षिण",
+      "east": "पूर्व",
+      "west": "पश्चिम",
+      "systemHealth": "प्रणाली स्वास्थ्य",
+      "platformMetrics": "प्लेटफॉर्म प्रदर्शन मेट्रिक्स",
+      "serverUptime": "सर्वर अपटाइम",
+      "activeUsers": "सक्रिय उपयोगकर्ता (24 घंटे)",
+      "avgResponseTime": "औसत प्रतिक्रिया समय"
     }
   },
   "common": {
@@ -113,5 +210,236 @@
     "import": "आयात करें",
     "refresh": "ताज़ा करें",
     "close": "बंद करें"
+  },
+  "modules": {
+    "beneficiaryForm": {
+      "title": "लाभार्थी पंजीकरण फॉर्म",
+      "description": "लाभार्थी के रूप में पंजीकरण करने के लिए अपना विवरण भरें",
+      "personalInfo": "व्यक्तिगत जानकारी",
+      "personalInfoDesc": "कृपया सटीक जानकारी प्रदान करें",
+      "fullName": "पूरा नाम",
+      "fullNamePlaceholder": "अपना पूरा नाम दर्ज करें",
+      "aadhaar": "आधार संख्या",
+      "aadhaarPlaceholder": "XXXX-XXXX-XXXX",
+      "phone": "फोन नंबर",
+      "phonePlaceholder": "+91 XXXXX XXXXX",
+      "state": "राज्य",
+      "selectState": "राज्य चुनें",
+      "states": {
+        "maharashtra": "महाराष्ट्र",
+        "karnataka": "कर्नाटक",
+        "delhi": "दिल्ली",
+        "tamilnadu": "तमिलनाडु"
+      },
+      "district": "जिला",
+      "districtPlaceholder": "जिला दर्ज करें",
+      "address": "पूरा पता",
+      "addressPlaceholder": "अपना पूरा पता दर्ज करें",
+      "submitButton": "आवेदन जमा करें",
+      "submittedTitle": "आवेदन जमा किया गया",
+      "submittedDescription": "आपका लाभार्थी आवेदन सफलतापूर्वक जमा कर दिया गया है।"
+    },
+    "projectTracking": {
+      "title": "परियोजना ट्रैकिंग",
+      "description": "चल रही और पूर्ण परियोजनाओं की निगरानी करें",
+      "projectId": "परियोजना आईडी",
+      "progress": "प्रगति",
+      "status": {
+        "completed": "पूर्ण",
+        "inProgress": "प्रगति पर है",
+        "pending": "लंबित"
+      },
+      "months": {
+        "jan": "जनवरी",
+        "feb": "फरवरी",
+        "mar": "मार्च",
+        "apr": "अप्रैल",
+        "may": "मई",
+        "jun": "जून",
+        "jul": "जुलाई",
+        "aug": "अगस्त",
+        "sep": "सितंबर",
+        "oct": "अक्टूबर",
+        "nov": "नवंबर",
+        "dec": "दिसंबर"
+      },
+      "projects": {
+        "healthcare": {
+          "name": "स्वास्थ्य बुनियादी ढांचा विकास"
+        },
+        "healthAwareness": {
+          "name": "ग्रामीण स्वास्थ्य जागरूकता अभियान"
+        },
+        "medicalEquipment": {
+          "name": "चिकित्सा उपकरण खरीद"
+        },
+        "telemedicine": {
+          "name": "टेलीमेडिसिन सेवा शुरूआत"
+        }
+      }
+    },
+    "fundUtilization": {
+      "title": "फंड उपयोग",
+      "description": "वित्तीय आवंटन की ट्रैकिंग और प्रबंधन करें",
+      "stats": {
+        "allocated": "कुल आवंटित",
+        "utilized": "उपयोग किया गया",
+        "utilizationRate": "{{rate}} उपयोग",
+        "available": "उपलब्ध",
+        "pending": "स्वीकृति लंबित"
+      },
+      "recentTransactions": "हाल के लेनदेन",
+      "transactionsDescription": "नवीनतम फंड उपयोग गतिविधियाँ",
+      "categories": {
+        "infrastructure": "बुनियादी ढांचा",
+        "training": "प्रशिक्षण",
+        "healthcare": "स्वास्थ्य सेवा",
+        "marketing": "विपणन"
+      },
+      "transactions": {
+        "medicalEquipment": "चिकित्सा उपकरण खरीद",
+        "staffTraining": "कर्मचारी प्रशिक्षण कार्यक्रम",
+        "medicineProcurement": "दवाओं की खरीद",
+        "awarenessCampaign": "जागरूकता अभियान"
+      }
+    },
+    "skillTraining": {
+      "title": "कौशल प्रशिक्षण कार्यक्रम",
+      "description": "अपने कौशल को बढ़ाने के लिए पाठ्यक्रमों में नामांकन करें",
+      "courseId": "आईडी",
+      "enrollmentProgress": "नामांकन प्रगति",
+      "courseFull": "पाठ्यक्रम पूर्ण",
+      "enrollNow": "अभी नामांकन करें",
+      "status": {
+        "open": "खुला",
+        "full": "पूर्ण"
+      },
+      "levels": {
+        "beginner": "शुरुआत करने वाले",
+        "intermediate": "मध्यम",
+        "advanced": "उन्नत"
+      },
+      "duration": {
+        "months_one": "1 महीना",
+        "months_other": "{{count}} महीने",
+        "weeks_one": "1 सप्ताह",
+        "weeks_other": "{{count}} सप्ताह"
+      },
+      "courses": {
+        "healthcareAssistant": "स्वास्थ्य सहायक प्रशिक्षण",
+        "medicalEquipment": "चिकित्सा उपकरण रखरखाव",
+        "firstAid": "उन्नत प्राथमिक चिकित्सा प्रमाणपत्र",
+        "digitalHealth": "डिजिटल स्वास्थ्य रिकॉर्ड प्रबंधन"
+      }
+    },
+    "grievance": {
+      "title": "शिकायत निवारण",
+      "description": "समस्याओं की रिपोर्ट करें और उनके समाधान को ट्रैक करें",
+      "submitNew": "नई शिकायत सबमिट करें",
+      "submitDescription": "अपनी समस्या का विस्तार से वर्णन करें",
+      "category": "श्रेणी",
+      "selectCategory": "श्रेणी चुनें",
+      "categories": {
+        "documentation": "दस्तावेजीकरण",
+        "payment": "भुगतान",
+        "serviceQuality": "सेवा गुणवत्ता",
+        "other": "अन्य"
+      },
+      "subject": "विषय",
+      "subjectPlaceholder": "समस्या का संक्षिप्त वर्णन",
+      "detailedDescription": "विस्तृत वर्णन",
+      "descriptionPlaceholder": "कृपया अपनी शिकायत के बारे में विस्तृत जानकारी प्रदान करें",
+      "submitButton": "शिकायत सबमिट करें",
+      "submittedTitle": "शिकायत सबमिट की गई",
+      "submittedDescription": "आपकी शिकायत दर्ज कर ली गई है। आपको ईमेल के माध्यम से अपडेट प्राप्त होंगे।",
+      "previousTitle": "पिछली शिकायतें",
+      "previousDescription": "अपनी सबमिट की गई शिकायतों की स्थिति को ट्रैक करें",
+      "status": {
+        "resolved": "हल किया गया",
+        "inProgress": "प्रगति पर है"
+      },
+      "previousGrievances": {
+        "docVerification": "दस्तावेज सत्यापन में देरी",
+        "paymentNotReceived": "भुगतान प्राप्त नहीं हुआ"
+      }
+    },
+    "feedback": {
+      "title": "प्रतिक्रिया और सुझाव",
+      "description": "हमें अपनी सेवाओं को बेहतर बनाने में मदद करें",
+      "shareExperience": "अपना अनुभव साझा करें",
+      "feedbackHelps": "आपकी प्रतिक्रिया हमें आपकी बेहतर सेवा करने में मदद करती है",
+      "rateExperience": "अपने अनुभव को रेट करें",
+      "pleaseRate": "कृपया अपने अनुभव को रेट करें",
+      "yourFeedback": "आपकी प्रतिक्रिया",
+      "placeholder": "अपने विचार, सुझाव या चिंताएँ साझा करें...",
+      "submitButton": "प्रतिक्रिया सबमिट करें",
+      "thankYou": "धन्यवाद!",
+      "submittedDescription": "आपकी प्रतिक्रिया सफलतापूर्वक सबमिट कर दी गई है।",
+      "statsTitle": "हाल की प्रतिक्रिया आँकड़े",
+      "statsDescription": "समुदाय संतुष्टि मेट्रिक्स",
+      "basedOnReviews": "{{count}} समीक्षाओं पर आधारित",
+      "ratings": {
+        "poor": "खराब",
+        "fair": "ठीक",
+        "good": "अच्छा",
+        "veryGood": "बहुत अच्छा",
+        "excellent": "उत्कृष्ट"
+      }
+    },
+    "analytics": {
+      "title": "विश्लेषण और अंतर्दृष्टि",
+      "description": "बेहतर निर्णय लेने के लिए डेटा-आधारित अंतर्दृष्टि",
+      "stats": {
+        "totalBeneficiaries": "कुल लाभार्थी",
+        "activeProjects": "सक्रिय परियोजनाएं",
+        "fundsAllocated": "आवंटित धनराशि",
+        "growthRate": "वृद्धि दर"
+      },
+      "trends": {
+        "quarter": "{{percentage}} इस तिमाही में",
+        "month": "{{percentage}} इस महीने में",
+        "utilization": "{{percentage}} उपयोग किया गया",
+        "yoy": "वर्ष दर वर्ष"
+      },
+      "enrollment": {
+        "title": "मासिक नामांकन प्रवृत्ति",
+        "description": "समय के साथ लाभार्थी पंजीकरण",
+        "registrations": "पंजीकरण"
+      },
+      "categoryDistribution": {
+        "title": "श्रेणी वितरण",
+        "description": "श्रेणी के अनुसार परियोजनाएं"
+      },
+      "categories": {
+        "healthcare": "स्वास्थ्य सेवा",
+        "infrastructure": "बुनियादी ढांचा",
+        "training": "प्रशिक्षण",
+        "awareness": "जागरूकता"
+      },
+      "statePerformance": {
+        "title": "राज्य-वार प्रदर्शन",
+        "description": "लाभार्थी संख्या के अनुसार शीर्ष प्रदर्शन करने वाले राज्य"
+      },
+      "states": {
+        "maharashtra": "महाराष्ट्र",
+        "karnataka": "कर्नाटक",
+        "tamilNadu": "तमिलनाडु",
+        "gujarat": "गुजरात",
+        "uttarPradesh": "उत्तर प्रदेश",
+        "rajasthan": "राजस्थान"
+      },
+      "months": {
+        "jan": "जनवरी",
+        "apr": "अप्रैल",
+        "jul": "जुलाई",
+        "oct": "अक्टूबर",
+        "dec": "दिसंबर",
+        "month": "महीना {{number}}"
+      }
+    },
+    "notFound": {
+      "message": "ऊप्स! पृष्ठ नहीं मिला",
+      "returnHome": "मुख्य पृष्ठ पर लौटें"
+    }
   }
 }

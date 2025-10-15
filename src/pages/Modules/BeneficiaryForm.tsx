@@ -1,13 +1,27 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const BeneficiaryForm = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: "",
@@ -21,96 +35,138 @@ const BeneficiaryForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Application Submitted",
-      description: "Your beneficiary application has been submitted successfully.",
+      title: t("modules.beneficiaryForm.submittedTitle"),
+      description: t("modules.beneficiaryForm.submittedDescription"),
     });
   };
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Beneficiary Registration Form</h1>
-        <p className="text-muted-foreground">Fill in your details to register as a beneficiary</p>
+        <h1 className="text-3xl font-bold">
+          {t("modules.beneficiaryForm.title")}
+        </h1>
+        <p className="text-muted-foreground">
+          {t("modules.beneficiaryForm.description")}
+        </p>
       </div>
 
       <Card className="shadow-card">
         <CardHeader>
-          <CardTitle>Personal Information</CardTitle>
-          <CardDescription>Please provide accurate information</CardDescription>
+          <CardTitle>{t("modules.beneficiaryForm.personalInfo")}</CardTitle>
+          <CardDescription>
+            {t("modules.beneficiaryForm.personalInfoDesc")}
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="fullName">Full Name *</Label>
+                <Label htmlFor="fullName">
+                  {t("modules.beneficiaryForm.fullName")} *
+                </Label>
                 <Input
                   id="fullName"
-                  placeholder="Enter your full name"
+                  placeholder={t("modules.beneficiaryForm.fullNamePlaceholder")}
                   value={formData.fullName}
-                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, fullName: e.target.value })
+                  }
                   required
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="aadhaar">Aadhaar Number *</Label>
+                <Label htmlFor="aadhaar">
+                  {t("modules.beneficiaryForm.aadhaar")} *
+                </Label>
                 <Input
                   id="aadhaar"
-                  placeholder="XXXX-XXXX-XXXX"
+                  placeholder={t("modules.beneficiaryForm.aadhaarPlaceholder")}
                   maxLength={12}
                   value={formData.aadhaar}
-                  onChange={(e) => setFormData({ ...formData, aadhaar: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, aadhaar: e.target.value })
+                  }
                   required
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number *</Label>
+                <Label htmlFor="phone">
+                  {t("modules.beneficiaryForm.phone")} *
+                </Label>
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="+91 XXXXX XXXXX"
+                  placeholder={t("modules.beneficiaryForm.phonePlaceholder")}
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
                   required
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="state">State *</Label>
-                <Select onValueChange={(value) => setFormData({ ...formData, state: value })}>
+                <Label htmlFor="state">
+                  {t("modules.beneficiaryForm.state")} *
+                </Label>
+                <Select
+                  onValueChange={(value) =>
+                    setFormData({ ...formData, state: value })
+                  }
+                >
                   <SelectTrigger>
-                    <SelectValue placeholder="Select state" />
+                    <SelectValue
+                      placeholder={t("modules.beneficiaryForm.selectState")}
+                    />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="maharashtra">Maharashtra</SelectItem>
-                    <SelectItem value="karnataka">Karnataka</SelectItem>
-                    <SelectItem value="delhi">Delhi</SelectItem>
-                    <SelectItem value="tamilnadu">Tamil Nadu</SelectItem>
+                    <SelectItem value="maharashtra">
+                      {t("modules.beneficiaryForm.states.maharashtra")}
+                    </SelectItem>
+                    <SelectItem value="karnataka">
+                      {t("modules.beneficiaryForm.states.karnataka")}
+                    </SelectItem>
+                    <SelectItem value="delhi">
+                      {t("modules.beneficiaryForm.states.delhi")}
+                    </SelectItem>
+                    <SelectItem value="tamilnadu">
+                      {t("modules.beneficiaryForm.states.tamilnadu")}
+                    </SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="district">District *</Label>
+                <Label htmlFor="district">
+                  {t("modules.beneficiaryForm.district")} *
+                </Label>
                 <Input
                   id="district"
-                  placeholder="Enter district"
+                  placeholder={t("modules.beneficiaryForm.districtPlaceholder")}
                   value={formData.district}
-                  onChange={(e) => setFormData({ ...formData, district: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, district: e.target.value })
+                  }
                   required
                 />
               </div>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="address">Complete Address *</Label>
+              <Label htmlFor="address">
+                {t("modules.beneficiaryForm.address")} *
+              </Label>
               <Textarea
                 id="address"
-                placeholder="Enter your complete address"
+                placeholder={t("modules.beneficiaryForm.addressPlaceholder")}
                 value={formData.address}
-                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, address: e.target.value })
+                }
                 required
                 rows={3}
               />
             </div>
             <Button type="submit" className="w-full md:w-auto">
-              Submit Application
+              {t("modules.beneficiaryForm.submitButton")}
             </Button>
           </form>
         </CardContent>

@@ -1,66 +1,78 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Clock, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const SkillTraining = () => {
+  const { t } = useTranslation();
+
   const courses = [
     {
       id: "CRS001",
-      title: "Healthcare Assistant Training",
-      duration: "3 months",
+      title: t("modules.skillTraining.courses.healthcareAssistant"),
+      duration: t("modules.skillTraining.duration.months", { count: 3 }),
       enrolled: 245,
       capacity: 300,
-      status: "Open",
-      level: "Beginner",
+      status: t("modules.skillTraining.status.open"),
+      level: t("modules.skillTraining.levels.beginner"),
     },
     {
       id: "CRS002",
-      title: "Medical Equipment Maintenance",
-      duration: "2 months",
+      title: t("modules.skillTraining.courses.medicalEquipment"),
+      duration: t("modules.skillTraining.duration.months", { count: 2 }),
       enrolled: 180,
       capacity: 200,
-      status: "Open",
-      level: "Intermediate",
+      status: t("modules.skillTraining.status.open"),
+      level: t("modules.skillTraining.levels.intermediate"),
     },
     {
       id: "CRS003",
-      title: "Advanced First Aid Certification",
-      duration: "1 month",
+      title: t("modules.skillTraining.courses.firstAid"),
+      duration: t("modules.skillTraining.duration.months", { count: 1 }),
       enrolled: 150,
       capacity: 150,
-      status: "Full",
-      level: "Advanced",
+      status: t("modules.skillTraining.status.full"),
+      level: t("modules.skillTraining.levels.advanced"),
     },
     {
       id: "CRS004",
-      title: "Digital Health Records Management",
-      duration: "6 weeks",
+      title: t("modules.skillTraining.courses.digitalHealth"),
+      duration: t("modules.skillTraining.duration.weeks", { count: 6 }),
       enrolled: 95,
       capacity: 200,
-      status: "Open",
-      level: "Beginner",
+      status: t("modules.skillTraining.status.open"),
+      level: t("modules.skillTraining.levels.beginner"),
     },
   ];
 
   const getLevelColor = (level: string) => {
-    switch (level) {
-      case "Beginner":
-        return "bg-accent text-accent-foreground";
-      case "Intermediate":
-        return "bg-primary text-primary-foreground";
-      case "Advanced":
-        return "bg-secondary text-secondary-foreground";
-      default:
-        return "bg-muted";
+    if (level === t("modules.skillTraining.levels.beginner")) {
+      return "bg-accent text-accent-foreground";
+    } else if (level === t("modules.skillTraining.levels.intermediate")) {
+      return "bg-primary text-primary-foreground";
+    } else if (level === t("modules.skillTraining.levels.advanced")) {
+      return "bg-secondary text-secondary-foreground";
+    } else {
+      return "bg-muted";
     }
   };
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Skill Training Programs</h1>
-        <p className="text-muted-foreground">Enroll in courses to enhance your skills</p>
+        <h1 className="text-3xl font-bold">
+          {t("modules.skillTraining.title")}
+        </h1>
+        <p className="text-muted-foreground">
+          {t("modules.skillTraining.description")}
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -74,10 +86,14 @@ const SkillTraining = () => {
                   </div>
                   <div>
                     <CardTitle className="text-lg">{course.title}</CardTitle>
-                    <CardDescription className="text-xs mt-1">ID: {course.id}</CardDescription>
+                    <CardDescription className="text-xs mt-1">
+                      {t("modules.skillTraining.courseId")}: {course.id}
+                    </CardDescription>
                   </div>
                 </div>
-                <Badge className={getLevelColor(course.level)}>{course.level}</Badge>
+                <Badge className={getLevelColor(course.level)}>
+                  {course.level}
+                </Badge>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -88,12 +104,16 @@ const SkillTraining = () => {
                 </div>
                 <div className="flex items-center gap-1">
                   <Users className="h-4 w-4" />
-                  <span>{course.enrolled}/{course.capacity}</span>
+                  <span>
+                    {course.enrolled}/{course.capacity}
+                  </span>
                 </div>
               </div>
               <div className="space-y-2">
                 <div className="flex justify-between text-xs">
-                  <span className="text-muted-foreground">Enrollment Progress</span>
+                  <span className="text-muted-foreground">
+                    {t("modules.skillTraining.enrollmentProgress")}
+                  </span>
                   <span className="font-medium">
                     {Math.round((course.enrolled / course.capacity) * 100)}%
                   </span>
@@ -101,16 +121,26 @@ const SkillTraining = () => {
                 <div className="h-2 bg-muted rounded-full overflow-hidden">
                   <div
                     className="h-full bg-gradient-primary"
-                    style={{ width: `${(course.enrolled / course.capacity) * 100}%` }}
+                    style={{
+                      width: `${(course.enrolled / course.capacity) * 100}%`,
+                    }}
                   />
                 </div>
               </div>
               <Button
                 className="w-full"
-                disabled={course.status === "Full"}
-                variant={course.status === "Full" ? "outline" : "default"}
+                disabled={
+                  course.status === t("modules.skillTraining.status.full")
+                }
+                variant={
+                  course.status === t("modules.skillTraining.status.full")
+                    ? "outline"
+                    : "default"
+                }
               >
-                {course.status === "Full" ? "Course Full" : "Enroll Now"}
+                {course.status === t("modules.skillTraining.status.full")
+                  ? t("modules.skillTraining.courseFull")
+                  : t("modules.skillTraining.enrollNow")}
               </Button>
             </CardContent>
           </Card>

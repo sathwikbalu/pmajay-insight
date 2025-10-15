@@ -54,25 +54,25 @@ const Landing = () => {
     {
       icon: DollarSign,
       value: "₹250+ Cr",
-      label: "landing.fundsDistributed",
+      label: "landing2.fundsAllocated",
       color: "primary",
     },
     {
       icon: FolderKanban,
       value: "500+",
-      label: "landing.activeProjects",
+      label: "landing2.developmentProjects",
       color: "secondary",
     },
     {
       icon: GraduationCap,
       value: "10,000+",
-      label: "landing.skillTrainingsCompleted",
+      label: "landing2.skillTrainingBeneficiaries",
       color: "accent",
     },
     {
       icon: Users,
       value: "5 Lakh+",
-      label: "landing.beneficiariesEmpowered",
+      label: "landing2.scFamiliesBenefited",
       color: "primary",
     },
   ];
@@ -80,31 +80,31 @@ const Landing = () => {
   const keyFeatures = [
     {
       icon: UserPlus,
-      title: "landing.beneficiarySupportTitle",
-      description: "landing.beneficiarySupportDesc",
+      title: "landing2.educationalSupportTitle",
+      description: "landing2.educationalSupportDesc",
     },
     {
       icon: DollarSign,
-      title: "landing.directBenefitTitle",
-      description: "landing.directBenefitDesc",
+      title: "landing2.directBenefitTitle",
+      description: "landing2.directBenefitDesc",
     },
     {
       icon: Building,
-      title: "landing.infrastructureTitle",
-      description: "landing.infrastructureDesc",
+      title: "landing2.infrastructureTitle",
+      description: "landing2.infrastructureDesc",
     },
     {
       icon: Briefcase,
-      title: "landing.livelihoodTitle",
-      description: "landing.livelihoodDesc",
+      title: "landing2.livelihoodTitle",
+      description: "landing2.livelihoodDesc",
     },
   ];
 
   const schemeGoals = [
-    "landing.goal1",
-    "landing.goal2",
-    "landing.goal3",
-    "landing.goal4",
+    "landing2.goal1",
+    "landing2.goal2",
+    "landing2.goal3",
+    "landing2.goal4",
   ];
 
   return (
@@ -158,7 +158,7 @@ const Landing = () => {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="text-xl md:text-3xl text-primary-foreground/90 mb-4 font-semibold"
           >
-            {t("landing.tagline")}
+            {t("landing2.tagline")}
           </motion.p>
 
           <motion.p
@@ -167,7 +167,7 @@ const Landing = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-lg md:text-xl text-primary-foreground/80 mb-12 max-w-3xl mx-auto"
           >
-            {t("landing.subtitle")}
+            {t("landing2.subtitle")}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -183,7 +183,7 @@ const Landing = () => {
               className="text-lg px-8 py-6 shadow-elegant hover:shadow-2xl transition-all hover:scale-105"
             >
               <Link to="/register">
-                {t("landing.applyNow")} <ArrowRight className="ml-2 h-5 w-5" />
+                {t("landing2.applyNow")} <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button
@@ -193,7 +193,7 @@ const Landing = () => {
               className="text-lg px-8 py-6 bg-white/10 backdrop-blur-md border-white/20 text-primary-foreground hover:bg-white/20 shadow-elegant hover:shadow-2xl transition-all hover:scale-105"
             >
               <Link to="/modules/beneficiary-form">
-                {t("landing.checkEligibility")}
+                {t("landing2.checkEligibility")}
               </Link>
             </Button>
           </motion.div>
@@ -232,14 +232,14 @@ const Landing = () => {
             >
               <Target className="h-8 w-8 text-primary" />
               <h2 className="text-4xl md:text-5xl font-bold">
-                {t("landing.schemeOverview")}
+                {t("landing2.schemeOverview")}
               </h2>
             </motion.div>
             <motion.p
               variants={itemVariants}
               className="text-lg text-muted-foreground max-w-3xl mx-auto"
             >
-              {t("landing.missionDesc")}
+              {t("landing2.missionDesc")}
             </motion.p>
           </motion.div>
 
@@ -258,12 +258,12 @@ const Landing = () => {
                     <Rocket className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-2xl">
-                    {t("landing.ourMission")}
+                    {t("landing2.ourMission")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    {t("landing.missionDesc")}
+                    {t("landing2.missionDesc2")}
                   </p>
                 </CardContent>
               </Card>
@@ -277,25 +277,22 @@ const Landing = () => {
                     <Users className="h-6 w-6 text-accent-foreground" />
                   </div>
                   <CardTitle className="text-2xl">
-                    {t("landing.beneficiaries")}
+                    {t("landing2.beneficiaries")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    {t("landing.beneficiariesDesc")}
-                  </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>{t("landing.beneficiaries.item1")}</span>
+                      <span>{t("landing2.beneficiaries.item1")}</span>
                     </li>
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>{t("landing.beneficiaries.item2")}</span>
+                      <span>{t("landing2.beneficiaries.item2")}</span>
                     </li>
                     <li className="flex items-start gap-2 text-muted-foreground">
                       <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                      <span>{t("landing.beneficiaries.item3")}</span>
+                      <span>{t("landing2.beneficiaries.item3")}</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -345,14 +342,14 @@ const Landing = () => {
             >
               <BarChart3 className="h-8 w-8 text-secondary" />
               <h2 className="text-4xl md:text-5xl font-bold">
-                {t("landing.impactStats")}
+                {t("landing2.impactStats")}
               </h2>
             </motion.div>
             <motion.p
               variants={itemVariants}
               className="text-lg text-muted-foreground"
             >
-              {t("landing.joinDesc")}
+              {t("landing2.joinDesc")}
             </motion.p>
           </motion.div>
 
@@ -408,13 +405,13 @@ const Landing = () => {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-bold mb-4"
             >
-              {t("landing.keyFeatures")}
+              {t("landing2.keyFeatures")}
             </motion.h2>
             <motion.p
               variants={itemVariants}
               className="text-lg text-muted-foreground max-w-2xl mx-auto"
             >
-              {t("landing.featuresDesc")}
+              {t("landing2.featuresDesc")}
             </motion.p>
           </motion.div>
 
@@ -474,13 +471,13 @@ const Landing = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6"
           >
-            {t("landing.readyToStart")}
+            {t("landing2.readyToStart")}
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-primary-foreground/90 mb-10"
           >
-            {t("landing.joinDesc")}
+            {t("landing2.joinDesc2")}
           </motion.p>
           <motion.div
             variants={itemVariants}
@@ -492,7 +489,7 @@ const Landing = () => {
               className="text-lg px-10 py-7 shadow-elegant hover:shadow-2xl transition-all hover:scale-105"
             >
               <Link to="/register">
-                {t("landing.applyNow")} <ArrowRight className="ml-2 h-5 w-5" />
+                {t("landing2.applyNow")} <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button
@@ -502,7 +499,7 @@ const Landing = () => {
               className="text-lg px-10 py-7 bg-white/10 backdrop-blur-md border-white/20 text-primary-foreground hover:bg-white/20 shadow-elegant hover:shadow-2xl transition-all hover:scale-105"
             >
               <Link to="/modules/beneficiary-form">
-                {t("landing.checkEligibility")}
+                {t("landing2.checkEligibility")}
               </Link>
             </Button>
           </motion.div>
@@ -521,13 +518,13 @@ const Landing = () => {
                 <h3 className="font-bold text-xl">PM-AJAY</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                {t("landing.footerDesc")}
+                {t("landing2.footerDesc")}
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">
-                {t("landing.footerQuickLinks")}
+                {t("landing2.footerQuickLinks")}
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -567,7 +564,7 @@ const Landing = () => {
 
             <div>
               <h4 className="font-semibold mb-4">
-                {t("landing.footerMinistries")}
+                {t("landing2.footerMinistries")}
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -577,7 +574,7 @@ const Landing = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {t("landing.ministrySocialJustice")}
+                    {t("landing2.ministrySocialJustice")}
                   </a>
                 </li>
                 <li>
@@ -587,7 +584,7 @@ const Landing = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {t("landing.nationalPortal")}
+                    {t("landing2.nationalPortal")}
                   </a>
                 </li>
                 <li>
@@ -597,7 +594,7 @@ const Landing = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {t("landing.digitalIndia")}
+                    {t("landing2.digitalIndia")}
                   </a>
                 </li>
                 <li>
@@ -607,7 +604,7 @@ const Landing = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {t("landing.myGovIndia")}
+                    {t("landing2.myGovIndia")}
                   </a>
                 </li>
               </ul>
@@ -616,26 +613,26 @@ const Landing = () => {
 
           <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>
-              © 2024 PM-AJAY. {t("landing.allRights")}. Government of India.
+              © 2024 PM-AJAY. {t("landing2.allRights")}. Government of India.
             </p>
             <div className="flex gap-6">
               <Link
                 to="/privacy"
                 className="hover:text-primary transition-colors"
               >
-                {t("landing.privacyPolicy")}
+                {t("landing2.privacyPolicy")}
               </Link>
               <Link
                 to="/terms"
                 className="hover:text-primary transition-colors"
               >
-                {t("landing.termsOfService")}
+                {t("landing2.termsOfService")}
               </Link>
               <Link
                 to="/contact"
                 className="hover:text-primary transition-colors"
               >
-                {t("landing.contactUs")}
+                {t("landing2.contactUs")}
               </Link>
             </div>
           </div>

@@ -27,6 +27,11 @@
     "missionDesc": "To ensure comprehensive development and upliftment of Scheduled Caste communities through targeted interventions in education, infrastructure, skill development, and livelihood enhancement.",
     "beneficiaries": "Beneficiaries",
     "beneficiariesDesc": "Members of Scheduled Caste communities across India seeking support for education, skill development, livelihood, and infrastructure development.",
+    "beneficiaries": {
+      "item1": "Scheduled Caste (SC) Families Below Poverty Line",
+      "item2": "SC Students & Youth seeking skill development",
+      "item3": "SC Communities in underserved areas"
+    },
     "keyGoals": "Key Goals",
     "goal1": "Poverty reduction through income generation",
     "goal2": "Educational advancement and scholarships",
@@ -38,6 +43,7 @@
     "skillTrainingsCompleted": "Skill Trainings Completed",
     "beneficiariesEmpowered": "Beneficiaries Empowered",
     "keyFeatures": "Key Features",
+    "featuresDesc": "Comprehensive support mechanisms designed for holistic community development",
     "beneficiarySupportTitle": "Beneficiary Support",
     "beneficiarySupportDesc": "Direct assistance to SC community members for education, housing, and livelihood programs",
     "directBenefitTitle": "Direct Benefit Transfer",
@@ -48,12 +54,67 @@
     "livelihoodDesc": "Skill training programs and employment opportunities for sustainable income generation",
     "readyToStart": "Ready to Get Started?",
     "joinDesc": "Join thousands of beneficiaries already benefiting from PM-AJAY scheme",
+    "footerDesc": "Holistic development of Scheduled Caste communities through education, infrastructure, and livelihood support.",
     "footerQuickLinks": "Quick Links",
     "footerMinistries": "Government Ministries",
     "ministryTribal": "Ministry of Tribal Affairs",
     "ministrySocialJustice": "Ministry of Social Justice & Empowerment",
     "nationalPortal": "National Portal of India",
-    "allRights": "All rights reserved"
+    "digitalIndia": "Digital India",
+    "myGovIndia": "MyGov India",
+    "allRights": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contactUs": "Contact Us"
+  },
+  "landing2": {
+    "tagline": "Empowering Marginalized Communities",
+    "subtitle": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojana - Holistic development initiative for Scheduled Caste communities",
+    "applyNow": "Apply Now",
+    "checkEligibility": "Check Eligibility",
+    "schemeOverview": "Scheme Overview",
+    "ourMission": "Our Mission",
+    "missionDesc": "A comprehensive initiative dedicated to uplifting Scheduled Caste communities through poverty reduction, education enhancement, infrastructure development, and sustainable livelihood opportunities",
+    "missionDesc2": "To create an equitable society by ensuring comprehensive development of Scheduled Caste communities through quality education, economic empowerment, infrastructure improvement, and social inclusion across India through transparent governance and community participation.",
+    "beneficiaries": "Beneficiaries",
+    "beneficiaries": {
+      "item1": "Scheduled Caste (SC) Families Below Poverty Line",
+      "item2": "SC Students & Youth seeking skill development",
+      "item3": "SC Communities in underserved areas"
+    },
+    "goal1": "Reduce poverty among Scheduled Caste communities through targeted interventions",
+    "goal2": "Enhance educational opportunities and promote quality learning for SC students",
+    "goal3": "Develop infrastructure in SC-dominated areas for improved living standards",
+    "goal4": "Provide skill training and livelihood support for sustainable economic growth",
+    "impactStats": "Impact & Achievements",
+    "fundsAllocated": "Funds Allocated",
+    "developmentProjects": "Development Projects",
+    "skillTrainingBeneficiaries": "Skill Training Beneficiaries",
+    "scFamiliesBenefited": "SC Families Benefited",
+    "keyFeatures": "Key Features",
+    "featuresDesc": "Comprehensive support mechanisms designed for holistic community development",
+    "educationalSupportTitle": "Educational Support",
+    "educationalSupportDesc": "Scholarships, coaching programs, and quality education initiatives for SC students from primary to higher education levels",
+    "directBenefitTitle": "Direct Benefit Transfer",
+    "directBenefitDesc": "Transparent fund disbursement directly to beneficiary accounts through DBT mechanism for financial assistance",
+    "infrastructureTitle": "Infrastructure Development",
+    "infrastructureDesc": "Building community centers, sanitation facilities, roads, and essential amenities in SC-dominated villages and habitations",
+    "livelihoodTitle": "Livelihood Enhancement",
+    "livelihoodDesc": "Skill development programs, vocational training, entrepreneurship support, and sustainable employment opportunities",
+    "readyToStart": "Ready to Get Started?",
+    "joinDesc": "Transforming lives across the nation",
+    "joinDesc2": "Join thousands of Scheduled Caste families who have transformed their lives through PM-AJAY",
+    "footerDesc": "Holistic development of Scheduled Caste communities through education, infrastructure, and livelihood support.",
+    "footerQuickLinks": "Quick Links",
+    "footerMinistries": "Ministry Links",
+    "ministrySocialJustice": "Ministry of Social Justice & Empowerment",
+    "nationalPortal": "National Portal of India",
+    "digitalIndia": "Digital India",
+    "myGovIndia": "MyGov India",
+    "allRights": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contactUs": "Contact Us"
   },
   "login": {
     "welcomeBack": "Welcome Back",
@@ -97,7 +158,61 @@
       "newApplication": "New Application",
       "trackApplication": "Track Application",
       "viewBenefits": "View Benefits",
-      "raiseGrievance": "Raise Grievance"
+      "raiseGrievance": "Raise Grievance",
+      "activeApplications": "Active Applications",
+      "completedTraining": "Completed Training",
+      "pendingActions": "Pending Actions",
+      "recentActivities": "Recent Activities",
+      "activitiesDescription": "Your latest interactions with the system",
+      "quickActionsDescription": "Commonly used features",
+      "enrollTraining": "Enroll in Training",
+      "activities": {
+        "applicationSubmitted": "Application Submitted",
+        "documentVerification": "Document Verification",
+        "skillTrainingEnrolled": "Skill Training Enrolled",
+        "twoHoursAgo": "2 hours ago",
+        "oneDayAgo": "1 day ago",
+        "threeDaysAgo": "3 days ago",
+        "pending": "Pending",
+        "completed": "Completed",
+        "inProgress": "In Progress"
+      }
+    },
+    "officer": {
+      "welcome": "Welcome, Officer",
+      "overview": "Monitor and manage beneficiary applications",
+      "totalApplications": "Total Applications",
+      "trendApplications": "+12% from last month",
+      "approved": "Approved",
+      "approvalRate": "71.6% approval rate",
+      "pendingReview": "Pending Review",
+      "rejected": "Rejected",
+      "pendingApplications": "Pending Applications",
+      "pendingDescription": "Applications awaiting your review",
+      "applicationId": "Application #{{id}}",
+      "submittedDaysAgo": "Submitted {{days}} days ago",
+      "review": "Review"
+    },
+    "admin": {
+      "welcome": "Admin Dashboard",
+      "overview": "Complete system overview and analytics",
+      "totalBeneficiaries": "Total Beneficiaries",
+      "beneficiaryGrowth": "+15% growth",
+      "totalFundsDisbursed": "Total Funds Disbursed",
+      "fundUtilization": "85% utilization",
+      "activeProjects": "Active Projects",
+      "systemGrowth": "System Growth",
+      "regionalDistribution": "Regional Distribution",
+      "beneficiaryRegions": "Beneficiaries across regions",
+      "north": "North",
+      "south": "South",
+      "east": "East",
+      "west": "West",
+      "systemHealth": "System Health",
+      "platformMetrics": "Platform performance metrics",
+      "serverUptime": "Server Uptime",
+      "activeUsers": "Active Users (24h)",
+      "avgResponseTime": "Avg Response Time"
     }
   },
   "common": {
@@ -113,5 +228,236 @@
     "import": "Import",
     "refresh": "Refresh",
     "close": "Close"
+  },
+  "modules": {
+    "beneficiaryForm": {
+      "title": "Beneficiary Registration Form",
+      "description": "Fill in your details to register as a beneficiary",
+      "personalInfo": "Personal Information",
+      "personalInfoDesc": "Please provide accurate information",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "aadhaar": "Aadhaar Number",
+      "aadhaarPlaceholder": "XXXX-XXXX-XXXX",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+91 XXXXX XXXXX",
+      "state": "State",
+      "selectState": "Select state",
+      "states": {
+        "maharashtra": "Maharashtra",
+        "karnataka": "Karnataka",
+        "delhi": "Delhi",
+        "tamilnadu": "Tamil Nadu"
+      },
+      "district": "District",
+      "districtPlaceholder": "Enter district",
+      "address": "Complete Address",
+      "addressPlaceholder": "Enter your complete address",
+      "submitButton": "Submit Application",
+      "submittedTitle": "Application Submitted",
+      "submittedDescription": "Your beneficiary application has been submitted successfully."
+    },
+    "projectTracking": {
+      "title": "Project Tracking",
+      "description": "Monitor ongoing and completed projects",
+      "projectId": "Project ID",
+      "progress": "Progress",
+      "status": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "pending": "Pending"
+      },
+      "months": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "May",
+        "jun": "Jun",
+        "jul": "Jul",
+        "aug": "Aug",
+        "sep": "Sep",
+        "oct": "Oct",
+        "nov": "Nov",
+        "dec": "Dec"
+      },
+      "projects": {
+        "healthcare": {
+          "name": "Healthcare Infrastructure Development"
+        },
+        "healthAwareness": {
+          "name": "Rural Health Awareness Campaign"
+        },
+        "medicalEquipment": {
+          "name": "Medical Equipment Procurement"
+        },
+        "telemedicine": {
+          "name": "Telemedicine Service Rollout"
+        }
+      }
+    },
+    "fundUtilization": {
+      "title": "Fund Utilization",
+      "description": "Track and manage financial allocations",
+      "stats": {
+        "allocated": "Total Allocated",
+        "utilized": "Utilized",
+        "utilizationRate": "{{rate}} utilization",
+        "available": "Available",
+        "pending": "Pending Approval"
+      },
+      "recentTransactions": "Recent Transactions",
+      "transactionsDescription": "Latest fund utilization activities",
+      "categories": {
+        "infrastructure": "Infrastructure",
+        "training": "Training",
+        "healthcare": "Healthcare",
+        "marketing": "Marketing"
+      },
+      "transactions": {
+        "medicalEquipment": "Medical Equipment Purchase",
+        "staffTraining": "Staff Training Program",
+        "medicineProcurement": "Medicine Procurement",
+        "awarenessCampaign": "Awareness Campaign"
+      }
+    },
+    "skillTraining": {
+      "title": "Skill Training Programs",
+      "description": "Enroll in courses to enhance your skills",
+      "courseId": "ID",
+      "enrollmentProgress": "Enrollment Progress",
+      "courseFull": "Course Full",
+      "enrollNow": "Enroll Now",
+      "status": {
+        "open": "Open",
+        "full": "Full"
+      },
+      "levels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      },
+      "duration": {
+        "months_one": "1 month",
+        "months_other": "{{count}} months",
+        "weeks_one": "1 week",
+        "weeks_other": "{{count}} weeks"
+      },
+      "courses": {
+        "healthcareAssistant": "Healthcare Assistant Training",
+        "medicalEquipment": "Medical Equipment Maintenance",
+        "firstAid": "Advanced First Aid Certification",
+        "digitalHealth": "Digital Health Records Management"
+      }
+    },
+    "grievance": {
+      "title": "Grievance Redressal",
+      "description": "Report issues and track their resolution",
+      "submitNew": "Submit New Grievance",
+      "submitDescription": "Describe your issue in detail",
+      "category": "Category",
+      "selectCategory": "Select category",
+      "categories": {
+        "documentation": "Documentation",
+        "payment": "Payment",
+        "serviceQuality": "Service Quality",
+        "other": "Other"
+      },
+      "subject": "Subject",
+      "subjectPlaceholder": "Brief description of the issue",
+      "detailedDescription": "Detailed Description",
+      "descriptionPlaceholder": "Please provide detailed information about your grievance",
+      "submitButton": "Submit Grievance",
+      "submittedTitle": "Grievance Submitted",
+      "submittedDescription": "Your grievance has been registered. You'll receive updates via email.",
+      "previousTitle": "Previous Grievances",
+      "previousDescription": "Track status of your submitted grievances",
+      "status": {
+        "resolved": "Resolved",
+        "inProgress": "In Progress"
+      },
+      "previousGrievances": {
+        "docVerification": "Document Verification Delay",
+        "paymentNotReceived": "Payment Not Received"
+      }
+    },
+    "feedback": {
+      "title": "Feedback & Suggestions",
+      "description": "Help us improve our services",
+      "shareExperience": "Share Your Experience",
+      "feedbackHelps": "Your feedback helps us serve you better",
+      "rateExperience": "Rate Your Experience",
+      "pleaseRate": "Please rate your experience",
+      "yourFeedback": "Your Feedback",
+      "placeholder": "Share your thoughts, suggestions, or concerns...",
+      "submitButton": "Submit Feedback",
+      "thankYou": "Thank You!",
+      "submittedDescription": "Your feedback has been submitted successfully.",
+      "statsTitle": "Recent Feedback Stats",
+      "statsDescription": "Community satisfaction metrics",
+      "basedOnReviews": "Based on {{count}} reviews",
+      "ratings": {
+        "poor": "Poor",
+        "fair": "Fair",
+        "good": "Good",
+        "veryGood": "Very Good",
+        "excellent": "Excellent"
+      }
+    },
+    "analytics": {
+      "title": "Analytics & Insights",
+      "description": "Data-driven insights for better decision making",
+      "stats": {
+        "totalBeneficiaries": "Total Beneficiaries",
+        "activeProjects": "Active Projects",
+        "fundsAllocated": "Funds Allocated",
+        "growthRate": "Growth Rate"
+      },
+      "trends": {
+        "quarter": "{{percentage}} this quarter",
+        "month": "{{percentage}} this month",
+        "utilization": "{{percentage}} utilized",
+        "yoy": "Year over year"
+      },
+      "enrollment": {
+        "title": "Monthly Enrollment Trend",
+        "description": "Beneficiary registrations over time",
+        "registrations": "registrations"
+      },
+      "categoryDistribution": {
+        "title": "Category Distribution",
+        "description": "Projects by category"
+      },
+      "categories": {
+        "healthcare": "Healthcare",
+        "infrastructure": "Infrastructure",
+        "training": "Training",
+        "awareness": "Awareness"
+      },
+      "statePerformance": {
+        "title": "State-wise Performance",
+        "description": "Top performing states by beneficiary count"
+      },
+      "states": {
+        "maharashtra": "Maharashtra",
+        "karnataka": "Karnataka",
+        "tamilNadu": "Tamil Nadu",
+        "gujarat": "Gujarat",
+        "uttarPradesh": "Uttar Pradesh",
+        "rajasthan": "Rajasthan"
+      },
+      "months": {
+        "jan": "Jan",
+        "apr": "Apr",
+        "jul": "Jul",
+        "oct": "Oct",
+        "dec": "Dec",
+        "month": "Month {{number}}"
+      }
+    },
+    "notFound": {
+      "message": "Oops! Page not found",
+      "returnHome": "Return to Home"
+    }
   }
 }

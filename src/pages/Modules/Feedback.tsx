@@ -1,12 +1,20 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Feedback = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [rating, setRating] = useState(0);
   const [hoveredRating, setHoveredRating] = useState(0);
@@ -15,30 +23,53 @@ const Feedback = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Thank You!",
-      description: "Your feedback has been submitted successfully.",
+      title: t("modules.feedback.thankYou"),
+      description: t("modules.feedback.submittedDescription"),
     });
     setRating(0);
     setFeedback("");
   };
 
+  const getRatingText = (rating: number) => {
+    switch (rating) {
+      case 0:
+        return t("modules.feedback.pleaseRate");
+      case 1:
+        return t("modules.feedback.ratings.poor");
+      case 2:
+        return t("modules.feedback.ratings.fair");
+      case 3:
+        return t("modules.feedback.ratings.good");
+      case 4:
+        return t("modules.feedback.ratings.veryGood");
+      case 5:
+        return t("modules.feedback.ratings.excellent");
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Feedback & Suggestions</h1>
-        <p className="text-muted-foreground">Help us improve our services</p>
+        <h1 className="text-3xl font-bold">{t("modules.feedback.title")}</h1>
+        <p className="text-muted-foreground">
+          {t("modules.feedback.description")}
+        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card className="shadow-card">
           <CardHeader>
-            <CardTitle>Share Your Experience</CardTitle>
-            <CardDescription>Your feedback helps us serve you better</CardDescription>
+            <CardTitle>{t("modules.feedback.shareExperience")}</CardTitle>
+            <CardDescription>
+              {t("modules.feedback.feedbackHelps")}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-3">
-                <Label>Rate Your Experience *</Label>
+                <Label>{t("modules.feedback.rateExperience")} *</Label>
                 <div className="flex gap-2">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <button
@@ -60,19 +91,16 @@ const Feedback = () => {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  {rating === 0 && "Please rate your experience"}
-                  {rating === 1 && "Poor"}
-                  {rating === 2 && "Fair"}
-                  {rating === 3 && "Good"}
-                  {rating === 4 && "Very Good"}
-                  {rating === 5 && "Excellent"}
+                  {getRatingText(rating || hoveredRating)}
                 </p>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="feedback">Your Feedback *</Label>
+                <Label htmlFor="feedback">
+                  {t("modules.feedback.yourFeedback")} *
+                </Label>
                 <Textarea
                   id="feedback"
-                  placeholder="Share your thoughts, suggestions, or concerns..."
+                  placeholder={t("modules.feedback.placeholder")}
                   value={feedback}
                   onChange={(e) => setFeedback(e.target.value)}
                   required
@@ -80,7 +108,7 @@ const Feedback = () => {
                 />
               </div>
               <Button type="submit" className="w-full" disabled={rating === 0}>
-                Submit Feedback
+                {t("modules.feedback.submitButton")}
               </Button>
             </form>
           </CardContent>
@@ -88,8 +116,10 @@ const Feedback = () => {
 
         <Card className="shadow-card">
           <CardHeader>
-            <CardTitle>Recent Feedback Stats</CardTitle>
-            <CardDescription>Community satisfaction metrics</CardDescription>
+            <CardTitle>{t("modules.feedback.statsTitle")}</CardTitle>
+            <CardDescription>
+              {t("modules.feedback.statsDescription")}
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="text-center space-y-2">
@@ -99,14 +129,18 @@ const Feedback = () => {
                   <Star
                     key={star}
                     className={`h-5 w-5 ${
-                      star <= 4 ? "fill-secondary text-secondary" : "text-muted-foreground"
+                      star <= 4
+                        ? "fill-secondary text-secondary"
+                        : "text-muted-foreground"
                     }`}
                   />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground">Based on 1,245 reviews</p>
+              <p className="text-sm text-muted-foreground">
+                {t("modules.feedback.basedOnReviews", { count: 1245 })}
+              </p>
             </div>
-            
+
             <div className="space-y-3">
               {[
                 { stars: 5, percentage: 68 },
