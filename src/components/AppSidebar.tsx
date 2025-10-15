@@ -21,30 +21,32 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-
-const menuItems = [
-  { title: "Home", url: "/", icon: Home },
-  { title: "Dashboard", url: "/dashboard/beneficiary", icon: LayoutDashboard },
-];
-
-const moduleItems = [
-  { title: "Beneficiary Form", url: "/modules/beneficiary-form", icon: UserPlus },
-  { title: "Project Tracking", url: "/modules/project-tracking", icon: FolderKanban },
-  { title: "Fund Utilization", url: "/modules/fund-utilization", icon: DollarSign },
-  { title: "Skill Training", url: "/modules/skill-training", icon: GraduationCap },
-  { title: "Grievance", url: "/modules/grievance", icon: MessageSquare },
-  { title: "Feedback", url: "/modules/feedback", icon: ThumbsUp },
-  { title: "Analytics", url: "/analytics", icon: BarChart3 },
-];
+import { useTranslation } from "react-i18next";
 
 export function AppSidebar() {
   const { open } = useSidebar();
+  const { t } = useTranslation();
+
+  const menuItems = [
+    { title: t('sidebar.home'), url: "/", icon: Home },
+    { title: t('sidebar.dashboard'), url: "/dashboard/beneficiary", icon: LayoutDashboard },
+  ];
+
+  const moduleItems = [
+    { title: t('sidebar.beneficiaryForm'), url: "/modules/beneficiary-form", icon: UserPlus },
+    { title: t('sidebar.projectTracking'), url: "/modules/project-tracking", icon: FolderKanban },
+    { title: t('sidebar.fundUtilization'), url: "/modules/fund-utilization", icon: DollarSign },
+    { title: t('sidebar.skillTraining'), url: "/modules/skill-training", icon: GraduationCap },
+    { title: t('sidebar.grievance'), url: "/modules/grievance", icon: MessageSquare },
+    { title: t('sidebar.feedback'), url: "/modules/feedback", icon: ThumbsUp },
+    { title: t('sidebar.analytics'), url: "/analytics", icon: BarChart3 },
+  ];
 
   return (
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Main</SidebarGroupLabel>
+          <SidebarGroupLabel>{t('sidebar.main')}</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (
@@ -68,7 +70,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Modules</SidebarGroupLabel>
+          <SidebarGroupLabel>{t('sidebar.modules')}</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {moduleItems.map((item) => (
